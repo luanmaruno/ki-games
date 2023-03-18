@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap');
+
+:root {
+    --cor-primaria: #212121;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #ED1D51;
+    --cor-quartenaria: #4650E3;
+    --cor-quintenaria: #C3C3C3;
+    --font-primaria: 'Secular One', sans-serif;
+    --font-secundaria: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+    padding: 1% 12% 1% 12%;
+    background-color:#ED1D51;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cabecalho__grupo {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.cabecalho__menu {
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    padding: 2% 12% 1% 12%;
+}
+
+.apresentacao__titulo {
+    padding: 2% 0% 3% 0%;
+    font-family: var(--font-primaria);
+    font-size: 3rem;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__grupo {
+    padding: 0% 0% 10% 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.apresentacao__noticias {
+    display: flex;
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    color: var(--cor-quintenaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__noticias__imagem {
+    padding: 0% 3%;
+    width: 20%;
+    
+}
+
+.rodape {
+    padding: 3%;
+    background-color: var(--cor-terciaria);
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.rodape__marcas {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__marcas__copywriting {
+    display: flex;
+    align-items: last baseline;
+    color: var(--cor-secundaria);
+    }
+
+@media (max-width: 811px) {
+    .cabecalho {
+        padding: 1% 6% 1% 6%;
+    }
+
+    .cabecalho__grupo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao__noticias {
+        flex-direction: column;
+    }
+
+    .apresentacao__noticias {
+        font-size: 1.5rem;
+        
+    }
+    .apresentacao__noticias__imagem {
+        width: 50%;
+    }
+}
